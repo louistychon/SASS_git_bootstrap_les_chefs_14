@@ -21301,12 +21301,24 @@ header .button_red {
 
 #our_story {
   background-image: url("../images/main_bg.jpg");
-  height: 1000px;
+  height: auto;
   width: 100%;
   background-repeat: repeat;
 }
 #our_story i {
   color: #b12a3b;
+}
+
+#meet_our_chef {
+  background-image: url("../images/team_background.jpg");
+  height: 600px;
+  width: 100%;
+}
+#meet_our_chef .chefs img {
+  border-bottom: 1px solid grey;
+}
+#meet_our_chef .chef {
+  color: white;
 }
 
 h2, .h2 {
