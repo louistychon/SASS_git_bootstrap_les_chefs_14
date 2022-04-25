@@ -21340,12 +21340,39 @@ header .button_red {
 #book_your_table .card-img-top {
   border: 10px solid lightgrey;
 }
+#book_your_table .background-1 {
+  background-image: url("../images/blog_img1.jpg");
+  height: 200px;
+  border: 2px solid lightgrey;
+  border-radius: 20px;
+}
+#book_your_table .background-2 {
+  background-image: url("../images/blog_img2.jpg");
+  height: 200px;
+  border: 2px solid lightgrey;
+  border-radius: 20px;
+}
 
 #client_testimonials {
   background-image: url("../images/testimonials_background.jpg");
   background-size: cover;
   height: 500px;
   width: 100%;
+}
+#client_testimonials .card {
+  background-color: unset !important;
+  border: none;
+}
+#client_testimonials .card img {
+  border: 4px solid white;
+}
+#client_testimonials .border-white {
+  border: 1px solid white;
+  border-radius: 15px;
+}
+#client_testimonials .reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 #our_contact {
@@ -21360,6 +21387,11 @@ footer {
 footer .red_end_footer {
   height: 100px;
   background-color: #b12a3b;
+}
+footer .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 10px;
 }
 
 h2, .h2 {
