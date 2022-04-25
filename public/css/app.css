@@ -21267,7 +21267,8 @@ header {
   background-position: cover;
   height: 100vh;
   width: 100%;
-  border-image: url("../images/bottom_decoration_img.png") bottom;
+  border-bottom: 15px;
+  border-image: url("../images/bottom_decoration_img.png");
 }
 header ul {
   border-top: 2px solid white;
@@ -21321,8 +21322,46 @@ header .button_red {
   color: white;
 }
 
+#book_your_table {
+  background-image: url("../images/main_bg.jpg");
+  height: 1000px;
+  width: 100%;
+}
+#book_your_table .container {
+  background-color: white;
+}
+#book_your_table .contact_form {
+  background-image: url("../images/book_table_bg.jpg");
+  border-radius: 15px;
+  padding: 25px;
+}
+#book_your_table .contact_form input {
+  border-radius: 20px;
+  margin-top: 5px;
+}
+#book_your_table .card-img-top {
+  border: 10px solid lightgrey;
+}
+
+#client_testimonials {
+  background-image: url("../images/book_table_bg.jpg");
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+footer {
+  height: 500px;
+  width: 100%;
+  background-image: url("../images/footer_background.jpg");
+}
+
 h2, .h2 {
   font-family: courgette;
+}
+
+.button_red {
+  background-color: #b12a3b;
 }
 
 /*# sourceMappingURL=app.css.map */
