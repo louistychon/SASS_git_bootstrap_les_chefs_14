@@ -21256,5 +21256,28 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header {
+  background-image: linear-gradient(rgba(5, 0, 0, 0.966), rgba(0, 0, 0, 0.5)), url("../images/banner1.jpg");
+  background-size: 100%;
+  background-position: cover;
+  height: 99vh;
+  width: 100%;
+}
+header ul {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+}
+header .text_introduction {
+  text-align: center;
+  margin-top: 15%;
+  font-style: italic;
+}
+header .button_white {
+  background-color: #e5e5e4;
+}
+header .button_red {
+  background-color: #b12a3b;
+}
 
 /*# sourceMappingURL=app.css.map */
