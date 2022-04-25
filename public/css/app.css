@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: courgette;
+  src: url("../../../public/font/Courgette-Regular.ttf");
+}
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -21259,6 +21263,7 @@ textarea.form-control-lg {
 header {
   background-image: linear-gradient(rgba(5, 0, 0, 0.966), rgba(0, 0, 0, 0.5)), url("../images/banner1.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
   background-position: cover;
   height: 100vh;
   width: 100%;
@@ -21270,14 +21275,47 @@ header ul {
 }
 header .text_introduction {
   text-align: center;
-  margin-top: 15%;
-  font-style: italic;
+}
+header .text_introduction h1, header .text_introduction .h1 {
+  font-family: courgette;
+  margin-top: 10%;
 }
 header .button_white {
   background-color: #e5e5e4;
 }
 header .button_red {
   background-color: #b12a3b;
+}
+
+.our_title_red_span {
+  color: #af2839;
+  text-transform: uppercase;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+
+#column_balls {
+  height: 20px;
+  width: 100%;
+  background-image: url("../images/bottom_decoration_img.png");
+  background-size: cover;
+}
+
+#our_story {
+  backrgound-image: url("../images/banner1.jpg");
+  height: 1500px;
+  width: 100%;
+  background-repeat: repeat;
+  background-size: 100%;
+  bottom: 5vh;
+}
+
+h2, .h2 {
+  font-family: courgette;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,6 +1,7 @@
 header
     background-image: linear-gradient(rgba(5, 0, 0, 0.966), rgba(0, 0, 0, 0.5)), url('../images/banner1.jpg')
     background-size: 100%
+    background-repeat: no-repeat
     background-position: cover
     height: 100vh
     width: 100%
@@ -10,10 +11,20 @@ header
         text-transform: uppercase
     .text_introduction
         text-align: center
-        margin-top: 15%
-        font-style: italic    
-        
+        h1
+            font-family: courgette
+            margin-top: 10%
     .button_white
         background-color: $white-text
     .button_red
         background-color: $red-button
+
+.our_title_red_span
+    color: $red-span
+    text-transform: uppercase
+
+//carousel
+.carousel-indicators button
+    width: 10px!important
+    height: 10px!important
+    border-radius: 50%
