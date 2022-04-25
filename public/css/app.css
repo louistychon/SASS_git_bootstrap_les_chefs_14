@@ -21262,13 +21262,12 @@ textarea.form-control-lg {
 }
 header {
   background-image: linear-gradient(rgba(5, 0, 0, 0.966), rgba(0, 0, 0, 0.5)), url("../images/banner1.jpg");
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: cover;
-  height: 100vh;
-  width: 100%;
-  border-bottom: 15px;
-  border-image: url("../images/bottom_decoration_img.png");
+  height: 80vh;
+  border-style: dotted;
+  border-width: 0px 0px 20px 0px;
+  border-image: url("../images/bottom_decoration_img.png") 0 0 15 0 repeat rotate(90deg);
 }
 header ul {
   border-top: 2px solid white;
@@ -21324,7 +21323,6 @@ header .button_red {
 
 #book_your_table {
   background-image: url("../images/main_bg.jpg");
-  height: 1000px;
   width: 100%;
 }
 #book_your_table .container {
@@ -21344,16 +21342,24 @@ header .button_red {
 }
 
 #client_testimonials {
-  background-image: url("../images/book_table_bg.jpg");
+  background-image: url("../images/testimonials_background.jpg");
   background-size: cover;
-  height: 700px;
+  height: 500px;
   width: 100%;
 }
 
+#our_contact {
+  background-image: url("../images/main_bg.jpg");
+}
+
 footer {
-  height: 500px;
   width: 100%;
   background-image: url("../images/footer_background.jpg");
+  background-repeat: no-repeat;
+}
+footer .red_end_footer {
+  height: 100px;
+  background-color: #b12a3b;
 }
 
 h2, .h2 {

@@ -113,7 +113,7 @@
     </header>
     <!-- FIN DU HEADER (qui comprend le carrousel) ******************************************************************-->
     <main>
-        <section id="our_story">
+        <section id="our_story" class=" pt-5 pb-5">
             <div class="container bg-light">
                 <div class="colonne_triangles d-flex justify-content-between">
                     <div><img src="public/images/box-left-top.png" alt="" srcset=""></div>
@@ -245,7 +245,7 @@
                     </div>
                 </div>
                 <!--Triangles bottom of our story ! *****************************************************-->
-                <div class="colonne_triangles mt-5 d-flex justify-content-between">
+                <div class="colonne_triangles d-flex justify-content-between">
                     <div><img src="public/images/box-bottom-left.png" alt="" srcset=""></div>
                     <div class="align-self-center"><img src="public/images/decoration_line.png" alt="" srcset=""></div>
 
@@ -280,8 +280,8 @@
                 </div>
             </div>
         </section>
-        <section id="book_your_table">
-            <div class="container bg-light mb-5">
+        <section id="book_your_table" class="pb-5 pt-5">
+            <div class="container bg-light">
                 <div class="colonne_triangles d-flex justify-content-between">
                     <div><img src="public/images/box-left-top-grey.png" alt="" srcset=""></div>
 
@@ -359,45 +359,52 @@
                             more</button>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="colonne_triangles d-flex justify-content-between">
+                <div class="container bg-light">
+                    <div class="colonne_triangles d-flex justify-content-between bg-light">
                         <div><img src="public/images/box-bottom-left-grey.png" alt="" srcset=""></div>
                         <div><img src="public/images/box-bottom_right-grey.png" alt="" srcset=""></div>
                     </div>
                 </div>
         </section>
         <section id="client_testimonials">
-            <div class="d-flex-col justify-content-center mt-4 mb-5">
-                <h2 class="our_title d-block m-auto mt-4 text-center"><span class="our_title_red_span">Client</span>
+
+            <!--Titre-->
+            <div class="d-flex-col justify-content-center mb-5 pt-4">
+                <h2 class="our_title d-block m-auto text-center text-white"><span
+                        class="our_title_red_span">Client</span>
                     Testimonials</h2>
+                <img src="public/images/decoration_line.png" class="d-block m-auto" alt="" srcset="">
             </div>
-            <div class="d-flex-col justify-content-center mt-4 mb-5">
-                <div class="rowcards d-flex w-75">
+
+            <!--2 avis clients-->
+            <div class="d-flex justify-content-center justmt-4 mb-5">
+                <div class="rowcards d-flex justify-content-center w-75">
                     <div class="card mb-3">
-                        <div class="row g-0">
+                        <div class="row g-3">
                             <div class="col-md-4">
                                 <img src="/public/images/testimonial1.jpg" class="img-fluid rounded-circle" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">Lorem ipsum</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+                                        aliquid dolore explicabo, nisi iste obcaecati molestias exercitationem.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card mb-3">
-                        <div class="g-2">
+                        <div class="row g-3">
                             <div class="col-md-4">
                                 <img src="/public/images/testimonial1.jpg" class="img-fluid rounded-circle" alt=""
                                     srcset="">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">Lorem ipsum</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Corrupti incidunt consequuntur, similique temporibus quasi cupiditate. Sequi,
+                                        labore.</p>
                                 </div>
                             </div>
                         </div>
@@ -407,21 +414,82 @@
                 </div>
         </section>
         <section id="our_contact">
-            <div class="container w-25">
-                <div class="d-flex-col justify-content-center mt-4 mb-5">
-                    <h2 class="our_title d-block m-auto mt-4 text-center"><span class="our_title_red_span">Our</span>
-                        contact</h2>
-                    <img src="public/images/decoration_line.png" class="d-block m-auto" alt="" srcset="">
+            <div class="d-flex-col justify-content-center pt-4 pb-5">
+                <h2 class="our_title d-block m-auto mt-4 text-center"><span class="our_title_red_span">Our</span>
+                    contact</h2>
+                <img src="public/images/decoration_line.png" class="d-block m-auto" alt="" srcset="">
+                <div class="container mt-5 w-25 rounded-2 bg-danger">
+                    <div class="contact_red p-3 text-center m-auto text-white d-flex-col">
+                        <div class="border-bottom mb-2"><i class="fa-solid fa-location-dot fa-2x"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="border-bottom mb-2"><i class="fa-solid fa-phone fa-2x"></i>
+                            <p>+91-9876543210</p>
+                        </div>
+                        <div><i class="fa-solid fa-envelope fa-2x"></i>
+                            <p>abc@abc.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="container d-flex">
-        <div class="col text-white">About us</div>
-        <div class="col text-white">Instagram</div>
-        <div class="col text-white">Popular tags</div>
-    </div>
+        <div class="container d-flex pt-5">
+            <div class="col p-3 text-white">
+                <h4>About us</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non assumenda suscipit minima magni
+                    corrupti ullam? Architecto culpa enim obcaecati doloremque quod.
+                </p>
+                <ul class="social d-flex list-unstyled justify-content-around col-10">
+                    <li><i class="fa-brands fa-facebook-f fa-2x"></i></li>
+                    <li><i class="fa-brands fa-google-plus-g fa-2x"></i></li>
+                    <li><i class="fa-brands fa-pinterest-p fa-2x"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in fa-2x"></i></li>
+                </ul>
+            </div>
+            <div class="col p-3 text-white">
+                <h4>Instagram</h4>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="/public/images/instragram_gallery_img1.jpg" alt=""><img class="mt-2"
+                            src="/public/images/instragram_gallery_img2.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="/public/images/instragram_gallery_img2.jpg" alt=""><img class="mt-2"
+                            src="/public/images/instragram_gallery_img1.jpg" alt=""></div>
+                    <div class="col-3"><img src="/public/images/instragram_gallery_img1.jpg" alt=""><img class="mt-2"
+                            src="/public/images/instragram_gallery_img2.jpg" alt="">
+                    </div>
+                    <div class="col-3"><img src="/public/images/instragram_gallery_img2.jpg" alt=""><img class="mt-2"
+                            src="/public/images/instragram_gallery_img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col p-3 text-white">
+                    <h4>Popular tags</h4>
+                    <div class="row">
+                        <div><button
+                                class="btn bg-danger rounded-pill text-white border">Restaurant</button></div>
+                        <div ><button class="btn bg-danger rounded-pill text-white border">Responsive
+                                Design</button></div>
+                        <div ><button class="btn bg-danger rounded-pill text-white border">Hotel</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div ><button class="btn bg-danger rounded-pill text-white border">Blog
+                                section</button></div>
+                        <div class="col justify-content"><button class="btn bg-danger rounded-pill text-white border">SEO</button></div>
+                            <div ><button
+                                    class="btn bg-danger rounded-pill text-white border">Cuisine</button></div>
+                        </div>
+                        <div class="row"><div ><button
+                                class="btn bg-danger rounded-pill text-white border">Graphic</button></div><div ><button
+                                class="btn bg-danger rounded-pill text-white border">Food</button></div></div>
+                    </div>
+                </div>
+                <div class="row red_end_footer"></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
