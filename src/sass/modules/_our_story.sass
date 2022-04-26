@@ -1,17 +1,18 @@
 #our_story
     background-image: url("../images/main_bg.jpg")
     width: 100%
+    height: fit-content
     background-repeat: repeat
     label
         border-bottom: 1px solid lightgrey
-        border-right: 1px solid lightgrey 
+        border-right: 1px solid lightgrey
         p
             font-family: courgette
             font-size: 1.5em
     i
         color: $red-button
     .menu
-        height:900px
+        height: 900px
     .card
         border-bottom: 1px dotted lightgrey !important
         border-width: 80% !important
@@ -28,4 +29,10 @@
     .btn-check:focus + .btn
         box-shadow: 5px 0 0 0 $red-button !important
 
-        
+@media (max-width: 1000px)
+    .container
+        max-width: 100% !important
+
+@media (max-width: 768px)
+    .colonne_triangles img
+        display: none

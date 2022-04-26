@@ -3,6 +3,10 @@
   font-family: courgette;
   src: url("../../../public/font/Courgette-Regular.ttf");
 }
+@font-face {
+  font-family: roboto;
+  src: url("../../../public/font/Roboto-Regular.ttf");
+}
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -21260,17 +21264,43 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+h2, .h2 {
+  font-family: courgette;
+}
+h2 .our_title_red_span, .h2 .our_title_red_span {
+  font-size: 3rem;
+}
+
+.button_red {
+  background-color: #b12a3b;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .decoration_line {
+    display: none !important;
+  }
+}
+@media (max-width: 450px) {
+  .row {
+    --bs-gutter-x: 0 !important;
+  }
+}
 header {
   background: url("../images/banner1.jpg") no-repeat top center;
   background-size: cover;
   background-blend-mode: multiply;
   background-color: #2E2E2F;
-  height: 80vh;
+  height: 100vh;
   border-image: url("../images/bottom_decoration_img.png") repeat;
   border-bottom: 15px solid transparent;
   border-image-slice: 30;
 }
 header nav {
+  font-family: roboto;
   position: fixed;
 }
 header ul {
@@ -21314,9 +21344,24 @@ header .button_red {
   border-radius: 50%;
 }
 
+@media (max-width: 1000px) {
+  header {
+    height: 75vh;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 15vh;
+    border-image: none;
+  }
+  header .carousel {
+    display: none;
+  }
+}
 #our_story {
   background-image: url("../images/main_bg.jpg");
   width: 100%;
+  height: fit-content;
   background-repeat: repeat;
 }
 #our_story label {
@@ -21353,6 +21398,16 @@ header .button_red {
   box-shadow: 5px 0 0 0 #b12a3b !important;
 }
 
+@media (max-width: 1000px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .colonne_triangles img {
+    display: none;
+  }
+}
 #meet_our_chef {
   background-image: url("../images/team_background.jpg");
   height: 600px;
@@ -21365,6 +21420,14 @@ header .button_red {
   color: white;
 }
 
+@media (max-width: 1000px) {
+  #meet_our_chef {
+    height: fit-content;
+  }
+  #meet_our_chef .chefs {
+    flex-direction: column;
+  }
+}
 #book_your_table {
   background-image: url("../images/main_bg.jpg");
   width: 100%;
@@ -21409,15 +21472,53 @@ header .button_red {
 }
 #book_your_table .card_body_red {
   margin-top: 165px !important;
+  width: 95% !important;
 }
 #book_your_table .card-body h5, #book_your_table .card-body .h5, #book_your_table .card-body p {
   margin-top: 3vh !important;
 }
 
+@media (max-width: 1000px) {
+  .contact_form {
+    width: 95% !important;
+  }
+
+  .card_body_red {
+    width: 99% !important;
+  }
+}
+@media (max-width: 768px) {
+  .card_body_red {
+    display: block;
+  }
+
+  .contact_form button {
+    width: 50% !important;
+  }
+  .contact_form form {
+    width: 100% !important;
+  }
+
+  .our_blog_cards {
+    flex-direction: column;
+  }
+  .our_blog_cards .background-1, .our_blog_cards .background-2 {
+    background-size: cover;
+  }
+}
+@media (max-width: 600px) {
+  .card_body_red {
+    display: none;
+  }
+
+  .button_red {
+    width: 50% !important;
+  }
+}
 #client_testimonials {
   background-image: url("../images/testimonials_background.jpg");
   background-size: cover;
-  height: 500px;
+  height: fit-content;
   width: 100%;
 }
 #client_testimonials .card {
@@ -21436,10 +21537,40 @@ header .button_red {
   flex-direction: row-reverse;
 }
 
+@media (max-width: 1000px) {
+  .rowcards {
+    width: 100% !important;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .img-fluid {
+    display: block !important;
+    margin: auto !important;
+    margin-bottom: 10px !important;
+  }
+}
+@media (max-width: 450px) {
+  .img-fluid {
+    display: block !important;
+    margin: auto !important;
+    margin-bottom: 10px !important;
+  }
+}
 #our_contact {
   background-image: url("../images/main_bg.jpg");
 }
 
+@media (max-width: 1000px) {
+  .container {
+    width: 75% !important;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100% !important;
+  }
+}
 #border-image {
   background: url("../images/footer_bottom_decoration_img.png");
   background-color: black;
@@ -21462,20 +21593,44 @@ footer .gallery {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px 10px;
 }
-
-h2, .h2 {
-  font-family: courgette;
-}
-h2 .our_title_red_span, .h2 .our_title_red_span {
-  font-size: 3rem;
+footer h4, footer .h4 {
+  text-transform: uppercase;
 }
 
-.button_red {
-  background-color: #b12a3b;
+@media (max-width: 1000px) {
+  footer .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer ul {
+    padding-inline-start: 0 !important;
+    margin-block-start: 0 !important;
+  }
 }
-
-.container {
-  padding: 0 !important;
+@media (max-width: 768px) {
+  footer .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 0px;
+  }
+  footer .gallery img {
+    width: 75%;
+  }
+  footer .container {
+    flex-direction: column !important;
+    margin: auto !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  footer .col-4 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  footer .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .gallery img {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

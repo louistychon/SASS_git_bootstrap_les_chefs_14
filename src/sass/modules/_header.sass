@@ -3,11 +3,12 @@ header
     background-size: cover
     background-blend-mode: multiply
     background-color: #2E2E2F
-    height: 80vh
+    height: 100vh
     border-image: url('../images/bottom_decoration_img.png') repeat
     border-bottom: 15px solid transparent
     border-image-slice: 30
     nav
+        font-family: roboto
         position: fixed
     ul
         border-top: 2px solid white
@@ -41,3 +42,14 @@ header
         border-radius: 50%
     
 
+@media (max-width: 1000px)
+    header
+        height: 75vh
+
+@media (max-width: 768px)
+    header
+        height: 15vh
+        border-image: none
+        .carousel
+            display: none
+    

@@ -2,6 +2,7 @@ footer
     width: 100%
     background: url('../images/footer_background.jpg'), #1c1919 no-repeat top center
     background-size: cover
+   
     .red_end_footer
         height: 70px
         width: 100%
@@ -10,3 +11,36 @@ footer
         display: grid
         grid-template-columns: repeat(4, 1fr)
         gap: 10px 10px
+    h4
+        text-transform: uppercase
+
+@media (max-width: 1000px)
+    footer
+        .gallery
+            grid-template-columns: repeat(2, 1fr)
+        ul
+            padding-inline-start: 0 !important
+            margin-block-start: 0 !important
+        
+
+@media (max-width: 768px)
+    footer
+        .gallery
+            grid-template-columns: repeat(4, 1fr)
+            gap: 10px 0px
+            img
+                width:75%
+        .container
+            flex-direction: column !important
+            margin: auto !important
+            justify-content: center !important
+            width: 100% !important
+        .col-4
+            width: 100% !important
+@media (max-width: 500px)
+    footer
+        .gallery
+            grid-template-columns: repeat(2, 1fr)
+            img
+                width: 75%
+            

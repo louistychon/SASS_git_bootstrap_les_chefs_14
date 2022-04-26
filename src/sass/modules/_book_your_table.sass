@@ -32,6 +32,31 @@
         border-radius: 20px
     .card_body_red
         margin-top: 165px !important
+        width: 95% !important
     .card-body h5, .card-body p
         margin-top: 3vh !important
-  
+
+@media (max-width: 1000px)
+    .contact_form
+        width: 95% !important
+    .card_body_red
+        width: 99% !important
+
+@media (max-width: 768px)
+    .card_body_red
+        display: block
+    .contact_form
+        button
+            width: 50% !important
+        form
+            width: 100% !important
+    .our_blog_cards
+        flex-direction: column
+        .background-1, .background-2
+            background-size: cover
+
+@media (max-width: 600px)
+    .card_body_red
+        display: none
+    .button_red
+        width: 50% !important
