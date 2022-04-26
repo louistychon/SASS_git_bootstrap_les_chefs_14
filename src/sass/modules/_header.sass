@@ -1,11 +1,13 @@
 header
-    background-image: linear-gradient(rgba(5, 0, 0, 0.966), rgba(0, 0, 0, 0.5)), url('../images/banner1.jpg')
-    background-repeat: no-repeat
-    background-position: cover
+    background: url('../images/banner1.jpg') no-repeat top center
+    background-size: cover
+    background-blend-mode: multiply
+    background-color: #2E2E2F
     height: 80vh
-    border-style: dotted
-    border-width: 0px 0px 20px 0px
-    border-image: url("../images/bottom_decoration_img.png") 0 0 15 0 repeat rotate(90deg)
+    border-image: url('../images/bottom_decoration_img.png') repeat
+    border-bottom: 15px solid transparent
+    border-image-slice: 30
+   
     ul
         border-top: 2px solid white
         border-bottom: 2px solid white
@@ -25,8 +27,13 @@ header
     text-transform: uppercase
 
 //carousel
-.carousel-indicators button
-    width: 10px!important
-    height: 10px!important
-    border-radius: 50%
+.carousel
+    height: 60vh
+.carousel-indicators
+    height: 5vh 
+    button
+        width: 10px!important
+        height: 10px!important
+        border-radius: 50%
+    
 
