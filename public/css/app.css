@@ -21306,6 +21306,7 @@ header .button_red {
 
 .carousel-indicators {
   height: 5vh;
+  padding: 5px;
 }
 .carousel-indicators button {
   width: 10px !important;
@@ -21318,7 +21319,11 @@ header .button_red {
   width: 100%;
   background-repeat: repeat;
 }
-#our_story button p {
+#our_story label {
+  border-bottom: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+#our_story label p {
   font-family: courgette;
   font-size: 1.5em;
 }
@@ -21343,6 +21348,9 @@ header .button_red {
 #our_story .card img {
   width: 85%;
   border: 3px solid lightgrey;
+}
+#our_story .btn-check:focus + .btn {
+  box-shadow: 5px 0 0 0 #b12a3b !important;
 }
 
 #meet_our_chef {
@@ -21432,14 +21440,17 @@ header .button_red {
   background-image: url("../images/main_bg.jpg");
 }
 
+#border-image {
+  background: url("../images/footer_bottom_decoration_img.png");
+  background-color: black;
+  height: 15px;
+  width: 100%;
+}
+
 footer {
   width: 100%;
   background: url("../images/footer_background.jpg"), #1c1919 no-repeat top center;
   background-size: cover;
-  background-blend-mode: multiply;
-  border-image: url("../images/footer_bottom_decoration_img.png") repeat;
-  border-top: 15px solid transparent;
-  border-image-slice: 30;
 }
 footer .red_end_footer {
   height: 70px;
