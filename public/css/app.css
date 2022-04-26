@@ -21270,10 +21270,16 @@ header {
   border-bottom: 15px solid transparent;
   border-image-slice: 30;
 }
+header nav {
+  position: fixed;
+}
 header ul {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   text-transform: uppercase;
+}
+header ul li:hover {
+  background-color: red;
 }
 header .text_introduction {
   text-align: center;
@@ -21309,12 +21315,34 @@ header .button_red {
 
 #our_story {
   background-image: url("../images/main_bg.jpg");
-  height: auto;
   width: 100%;
   background-repeat: repeat;
 }
+#our_story button p {
+  font-family: courgette;
+  font-size: 1.5em;
+}
 #our_story i {
   color: #b12a3b;
+}
+#our_story .menu {
+  height: 900px;
+}
+#our_story .card {
+  border-bottom: 1px dotted lightgrey !important;
+  border-width: 80% !important;
+  background-color: #f8f9fa;
+}
+#our_story .card .red_label_price {
+  background-color: #efefef;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: red;
+}
+#our_story .card img {
+  width: 85%;
+  border: 3px solid lightgrey;
 }
 
 #meet_our_chef {
