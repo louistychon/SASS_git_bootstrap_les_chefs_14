@@ -21350,6 +21350,9 @@ header .button_red {
   height: 60vh;
 }
 
+.carousel-indicators {
+  top: 60vh;
+}
 .carousel-indicators .outline_indicator {
   border: 1px solid white;
   display: flex;
@@ -21386,13 +21389,11 @@ header .button_red {
 
   ul {
     display: block !important;
+    border: 0 !important;
   }
 }
 @media (max-width: 768px) {
-  header {
-    border-image: none;
-  }
-  header .carousel {
+  .carousel {
     display: none;
   }
 }
@@ -21448,7 +21449,7 @@ header .button_red {
 
 @media (max-width: 1000px) {
   .menu {
-    height: 1500px !important;
+    height: 1700px !important;
   }
 }
 @media (max-width: 768px) {
@@ -21509,6 +21510,10 @@ header .button_red {
   margin-top: 5px;
   width: 100%;
   height: 40px;
+}
+#book_your_table .contact_form form input::placeholder {
+  color: black;
+  padding-left: 4px;
 }
 #book_your_table .button_red {
   width: 30%;
@@ -21573,6 +21578,14 @@ header .button_red {
 
   .button_red {
     width: 50% !important;
+  }
+
+  input::placeholder {
+    text-align: center;
+  }
+
+  select {
+    text-align: center;
   }
 }
 #client_testimonials {
