@@ -21350,11 +21350,14 @@ header .button_red {
   height: 60vh;
 }
 
-.carousel-indicators .outline_indicators {
-  border: 2px solid white;
-  width: 10px !important;
-  height: 10px !important;
-  z-index: 2;
+.carousel-indicators .outline_indicator {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 18px !important;
+  height: 18px !important;
 }
 .carousel-indicators button {
   width: 10px !important;
@@ -21365,6 +21368,9 @@ header .button_red {
 @media (max-width: 1023px) {
   header {
     height: 62vh;
+  }
+  header nav {
+    left: 3;
   }
   header .carousel {
     margin-top: 10vh;
@@ -21446,6 +21452,11 @@ header .button_red {
   }
 }
 @media (max-width: 768px) {
+  .list-group-item.active {
+    color: black !important;
+    border-bottom: 4px solid red !important;
+  }
+
   .container {
     max-width: 100% !important;
   }
@@ -21635,6 +21646,9 @@ footer .gallery {
 footer h4, footer .h4 {
   text-transform: uppercase;
 }
+footer .popular_buttons {
+  justify-content: start !important;
+}
 
 @media (max-width: 1000px) {
   footer h4, footer .h4, footer p {
@@ -21649,6 +21663,9 @@ footer h4, footer .h4 {
   footer ul {
     padding-inline-start: 0 !important;
     margin-block-start: 0 !important;
+  }
+  footer .popular_buttons {
+    justify-content: center !important;
   }
 }
 @media (max-width: 768px) {
