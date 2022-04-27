@@ -21301,15 +21301,21 @@ header {
 }
 header nav {
   font-family: roboto;
-  position: fixed;
+  position: fixed !important;
+  display: flex;
+  width: 93vw;
 }
 header ul {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   text-transform: uppercase;
 }
+header ul li {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
 header ul li:hover {
-  background-color: red;
+  background-color: #b12a3b;
 }
 header .text_introduction {
   text-align: center;
@@ -21331,6 +21337,7 @@ header .button_red {
 }
 
 .carousel {
+  margin-top: 25vh;
   height: 60vh;
 }
 
@@ -21364,16 +21371,26 @@ header .button_red {
   height: fit-content;
   background-repeat: repeat;
 }
-#our_story label {
-  border-bottom: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
+#our_story .list-group-item {
+  background-color: unset !important;
+  border: unset !important;
+  border-bottom: 1px solid lightgrey !important;
+  border-right: 1px solid lightgrey !important;
+  text-align: center;
 }
-#our_story label p {
+#our_story .list-group-item p {
   font-family: courgette;
   font-size: 1.5em;
 }
-#our_story i {
+#our_story .list-group-item.active {
+  color: black !important;
+  border-right: 4px solid red !important;
+}
+#our_story .list-group-item.active i {
   color: #b12a3b;
+}
+#our_story i {
+  color: lightgrey;
 }
 #our_story .menu {
   height: 900px;
@@ -21399,13 +21416,21 @@ header .button_red {
 }
 
 @media (max-width: 1000px) {
-  .container {
-    max-width: 100% !important;
+  .menu {
+    height: 1500px !important;
   }
 }
 @media (max-width: 768px) {
+  .container {
+    max-width: 100% !important;
+  }
+
   .colonne_triangles img {
     display: none;
+  }
+
+  .menu {
+    height: 1700px !important;
   }
 }
 #meet_our_chef {

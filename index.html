@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,13 +22,13 @@
                         <a class="nav-link text-white" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About us</a>
+                        <a class="nav-link text-white" href="#aboutus">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Menu list</a>
+                        <a class="nav-link text-white" href="#menulist">Menu list</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">team</a>
+                        <a class="nav-link text-white" href="#team">team</a>
                     </li>
                 </ul>
                 <div class="container col-2 d-flex justify-content-center">
@@ -37,16 +38,16 @@
                 </div>
                 <ul class="navbar-nav col-5 d-flex justify-content-between">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Reservation</a>
+                        <a class="nav-link text-white" href="#reservation">Reservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Blog</a>
+                        <a class="nav-link text-white" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Testimonials</a>
+                        <a class="nav-link text-white" href="#testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact us</a>
+                        <a class="nav-link text-white" href="#contactus">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -113,18 +114,19 @@
     <!-- FIN DU HEADER (qui comprend le carrousel) ******************************************************************-->
     <main>
         <section id="our_story" class="pt-5 pb-5">
+            <a id="aboutus"></a>
             <div class="container bg-light">
                 <div class="colonne_triangles d-flex justify-content-between">
-                    <div><img src="public/images/box-left-top.png" alt="" srcset=""></div>
+                    <div><img src="public/images/box-left-top.png" alt=""></div>
 
                     <div>
                         <h2 class="our_title d-block m-auto mt-4 text-center"><span
                                 class="our_title_red_span">our</span>
                             Story</h2>
 
-                        <img class="decoration_line" src="public/images/decoration_line.png" alt="" srcset="">
+                        <img class="decoration_line" src="public/images/decoration_line.png" alt="">
                     </div>
-                    <div><img src="public/images/box-right-top.png" alt="" srcset=""></div>
+                    <div><img src="public/images/box-right-top.png" alt=""></div>
                 </div>
                 <p class="d-block m-auto w-50">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet animi enim delectus ad quod tempora
@@ -132,792 +134,851 @@
                     harum!
                 </p>
                 <div class="our_menu_list">
+                    <a id="menulist"></a>
                     <!--Titre menu-->
                     <h2 class="our_title d-block m-auto mt-4 text-center"><span
                             class="our_title_red_span me-2">our</span> Menu List</h2>
-                    <img class="m-auto d-block mb-4 decoration_line" src="public/images/decoration_line.png" alt="" srcset="">
+                    <img class="m-auto d-block mb-4 decoration_line" src="public/images/decoration_line.png" alt="">
                 </div>
                 <!--Début Grid menu-->
                 <div class="menu">
+                    <div class="float-start selector d-flex-col col-12 col-md-4 col-lg-2">
+                        <div role="tabpanel">
+                            <!-- List group -->
+                            <div class="list-group" id="myList" role="tablist">
+                                <a class="list-group-item list-group-item-action active" data-bs-toggle="list"
+                                    href="#menu1" role="tab"><i class="fa-solid fa-mug-hot fa-3x"></i>
+                                    <p> BreakFast</p>
+                                </a>
+                                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#menu2"
+                                    role="tab"><i class="fa-solid fa-burger fa-3x"></i>
+                                    <p>Lunch</p>
+                                </a>
+                                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#menu3"
+                                    role="tab"><i class="fa-solid fa-burger fa-3x"></i>
+                                    <p>Snacks</p>
+                                </a>
+                                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#menu4"
+                                    role="tab"><i class="fa-solid fa-mug-hot fa-3x"></i>
+                                    <p> Dinner</p>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
                     <!--menu breakfast-->
-                    <div class="collapse float-end col-10 position-relative" id="collapseExample">
-                        <div class="card position-absolute card-body border-0 bg-light">
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">menu1</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="menu1" role="tabpanel">
+                            <div class="float-end col-12 col-md-8 col-lg-10">
+                                <div class="card card-body border-0 bg-light">
+                                    <!-- Tab panes -->
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">menu1</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                        </div>
+                        <!--MENU 2-->
+                        <div class="tab-pane" id="menu2" role="tabpanel">
+                            <div class="float-end col-12 col-md-8 col-lg-10">
+                                <div class="card card-body border-0 bg-light">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">menu2</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                        </div>
+                        <!--MENU 3-->
+                        <div class="tab-pane" id="menu3" role="tabpanel">
+                            <div class="float-end col-12 col-md-8 col-lg-10">
+                                <div class="card card-body border-0 bg-light">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">menu3</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                        </div>
+                        <!--MENU 4-->
+                        <div class="tab-pane" id="menu4" role="tabpanel">
+                            <div class="float-end col-12 col-md-8 col-lg-10">
+                                <div class="card card-body border-0 bg-light">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">menu4</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
                                             </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card  p-0 m-0 border-0 border-bottom-1">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-0 m-0">
+                                            <div class="card p-0 m-0 border-0">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded-circle"
+                                                            src="/public/images/menu_image_1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="card-title">Deer steak with Potatoes</h5>
+                                                        <p class="card-text">Welcome to Risotto restaurant website. Here
+                                                            we try
+                                                            to share
+                                                            our</p>
+                                                    </div>
+                                                    <div><a href="#" class="red_label_price">25$</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--menu lunch-->
-                    <div class="collapse float-end col-10 position-relative" id="collapseExample2">
-                        <div class="card position-absolute card-body border-0 bg-light">
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">menu2</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collapse float-end col-10 position-relative" id="collapseExample3">
-                        <div class="card position-absolute card-body border-0 bg-light">
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">menu3</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collapse float-end col-10 position-relative" id="collapseExample4">
-                        <div class="card position-absolute card-body border-0 bg-light">
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">menu4</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card  p-0 m-0 border-0 border-bottom-1">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 p-0 m-0">
-                                    <div class="card p-0 m-0 border-0">
-                                        <div class="card-body d-flex align-items-center">
-                                            <div>
-                                                <img class="rounded-circle" src="/public/images/menu_image_1.jpg" alt=""
-                                                    srcset=""></div>
-                                            <div>
-                                                <h5 class="card-title">Deer steak with Potatoes</h5>
-                                                <p class="card-text">Welcome to Risotto restaurant website. Here we try
-                                                    to share
-                                                    our</p>
-                                            </div>
-                                            <div><a href="#" class="red_label_price">25$</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="float-start d-flex-col col-2">
-                        <!-- <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-                          </div> -->
-                        <!-- 
-                        <button class="btn border-end border-bottom col-12 bg-light" type="radio" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            
-                            <i class="fa-solid fa-mug-hot fa-3x"></i>
-                            <p> BreakFast</p>
-                        </button>
-                        <button class="btn border-end border-bottom col-12 bg-light" type="radio" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                            <i class="fa-solid fa-burger fa-3x"></i>
-                            <p>Lunch</p>
-                        </button>
-                        <button class="btn border-end border-bottom col-12 bg-light" type="radio" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            <i class="fa-solid fa-burger fa-3x"></i>
-                            <p>Snacks</p>
-                        </button>
-                        <button class="btn border-end border-bottom col-12 bg-light" type="radio" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            <i class="fa-solid fa-mug-hot fa-3x"></i>
-                            <p>Dinner</p>
-                        </button> -->
-                        <div class="btn-group container d-flex-col flex-wrap" role="group"
-                            aria-label="">
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
-                                autocomplete="off" data-bs-toggle="collapse" data-bs-target="#collapseExample" checked >
-                                
-                            <label class="btn col-12" for="btnradio1"> <i class="fa-solid fa-mug-hot fa-3x"></i>
-                                <p> BreakFast</p></label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
-                                data-bs-toggle="collapse" data-bs-target="#collapseExample2">
-                            <label class="btn col-12" for="btnradio2"><i class="fa-solid fa-burger fa-3x"></i>
-                                <p>Lunch</p></label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
-                                data-bs-toggle="collapse" data-bs-target="#collapseExample3">
-                            <label class="btn col-12" for="btnradio3"><i class="fa-solid fa-burger fa-3x"></i>
-                                <p>Snacks</p></label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
-                                data-bs-toggle="collapse" data-bs-target="#collapseExample4">
-                            <label class="btn col-12" for="btnradio4"> <i class="fa-solid fa-mug-hot fa-3x"></i>
-                                <p> BreakFast</p></label>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--Triangles bottom of our story ! *****************************************************-->
-                <div class="colonne_triangles d-flex justify-content-between">
-                    <div><img src="public/images/box-bottom-left.png" alt="" srcset=""></div>
-                    <div class="align-self-center"><img class="decoration_line" src="public/images/decoration_line.png" alt="" srcset=""></div>
-
-                    <div><img src="public/images/box-bottom_right.png" alt="" srcset=""></div>
                 </div>
             </div>
+
+            <!--Triangles bottom of our story ! *****************************************************-->
+            <div class="colonne_triangles d-flex justify-content-between">
+                <div><img src="public/images/box-bottom-left.png" alt=""></div>
+                <div class="align-self-center"><img class="decoration_line" src="public/images/decoration_line.png"
+                        alt=""></div>
+
+                <div><img src="public/images/box-bottom_right.png" alt=""></div>
             </div>
 
         </section>
-        <section id="meet_our_chef" class="">
+        <section id="meet_our_chef">
+            <a id="team"></a>
             <div class="text-center pt-5">
                 <h2 class="our_title d-block m-auto mt-4 text-center text-white"><span
                         class="our_title_red_span">Meet</span>
                     Our Chef</h2>
-                <div class="align-self-center mb-5"><img class="decoration_line" src="public/images/decoration_line.png" alt="" srcset=""></div>
+                <div class="align-self-center mb-5"><img class="decoration_line" src="public/images/decoration_line.png"
+                        alt=""></div>
                 <div class="chefs d-flex justify-content-around">
                     <div class="chef">
                         <img src="/public/images/chef1.png" alt="">
@@ -939,29 +1000,30 @@
             </div>
         </section>
         <section id="book_your_table" class="pb-5 pt-5">
+            <a id="reservation"></a>
             <div class="container bg-light">
                 <div class="colonne_triangles d-flex justify-content-between">
-                    <div><img src="public/images/box-left-top-grey.png" alt="" srcset=""></div>
+                    <div><img src="public/images/box-left-top-grey.png" alt=""></div>
 
                     <div>
                         <h2 class="our_title d-block m-auto mt-4 text-center"><span
                                 class="our_title_red_span">Book</span>
                             Your Table</h2>
 
-                        <img class="decoration_line" src="public/images/decoration_line.png" alt="" srcset="">
+                        <img class="decoration_line" src="public/images/decoration_line.png" alt="">
                     </div>
-                    <div><img src="public/images/box-right-top-grey.png" alt="" srcset=""></div>
+                    <div><img src="public/images/box-right-top-grey.png" alt=""></div>
                 </div>
 
 
-                <div class="contact_form bg-light w-50 m-auto">
+                <div class="contact_form bg-light w-50 m-auto mt-4">
                     <form class="d-flex-col w-75 justify-content-center align-items-center">
                         <div class="row">
                             <p class="text-white text-center">For any query please call us at: <span
                                     class="fw-bold">+91-1234567890</span></p>
                         </div>
                         <div class="row">
-                            <div class="col d-flex-col justify-content-end">
+                            <div class="col-12 col-md-6 d-flex-col justify-content-end">
                                 <input type="text" placeholder="Enter Full Name"><input placeholder="Phone Number"
                                     type="tel"><input placeholder="Date" type="text"><select name="select">
                                     <option value="val1">Occasion</option>
@@ -989,14 +1051,16 @@
                     </form>
                 </div>
                 <!--OUR BLOG ******************************************************************-->
-                <div class="d-flex-col justify-content-center mt-4 mb-5">
+                <div class="d-flex-col justify-content-center my-4">
+                    <a id="blog"></a>
                     <div>
                         <h2 class="our_title d-block m-auto mt-4 text-center"><span
                                 class="our_title_red_span">Our</span>
                             Blog</h2>
                     </div>
 
-                    <div><img src="public/images/decoration_line.png" class="decoration_line d-block m-auto" alt="" srcset=""></div>
+                    <div><img src="public/images/decoration_line.png" class="decoration_line d-block m-auto" alt="">
+                    </div>
                 </div>
 
                 <div class="card_group container w-75">
@@ -1039,19 +1103,20 @@
                 </div>
                 <div class="bg-light">
                     <div class="colonne_triangles d-flex justify-content-between bg-light">
-                        <div><img src="public/images/box-bottom-left-grey.png" alt="" srcset=""></div>
-                        <div><img src="public/images/box-bottom_right-grey.png" alt="" srcset=""></div>
+                        <div><img src="public/images/box-bottom-left-grey.png" alt=""></div>
+                        <div><img src="public/images/box-bottom_right-grey.png" alt=""></div>
                     </div>
                 </div>
+            </div>
         </section>
         <section id="client_testimonials">
-
+            <a id="testimonials"></a>
             <!--Titre-->
             <div class="d-flex-col justify-content-center mb-5 pt-4">
                 <h2 class="our_title d-block m-auto text-center text-white"><span
                         class="our_title_red_span">Client</span>
                     Testimonials</h2>
-                <img src="public/images/decoration_line.png" class="decoration_line d-block m-auto" alt="" srcset="">
+                <img src="public/images/decoration_line.png" class="decoration_line d-block m-auto" alt="">
             </div>
 
             <!--2 avis clients-->
@@ -1076,8 +1141,7 @@
                     <div class="card p-4 mb-3">
                         <div class="row reverse align-items-center">
                             <div class="col-md-4">
-                                <img src="/public/images/testimonial1.jpg" class="img-fluid rounded-circle" alt=""
-                                    srcset="">
+                                <img src="/public/images/testimonial1.jpg" class="img-fluid rounded-circle" alt="">
                             </div>
                             <div class="col-md-8 border-white">
                                 <div class="card-body">
@@ -1094,10 +1158,11 @@
                 </div>
         </section>
         <section id="our_contact">
+            <a id="contactus"></a>
             <div class="d-flex-col justify-content-center pt-4 pb-5">
                 <h2 class="our_title d-block m-auto mt-4 text-center"><span class="our_title_red_span">Our</span>
                     Contact</h2>
-                <img src="public/images/decoration_line.png" class="decoration_line d-block m-auto" alt="" srcset="">
+                <img src="public/images/decoration_line.png" class="decoration_line d-block m-auto" alt="">
                 <div class="container mt-5 w-25 rounded-2 bg-danger">
                     <div class="contact_red p-3 text-center m-auto text-white d-flex-col">
                         <div class="border-bottom mb-2"><i class="fa-solid fa-location-dot fa-2x"></i>
@@ -1144,7 +1209,7 @@
             </div>
             <div class="col-4 p-3 text-white">
                 <h4 class="">Popular tags</h4>
-                <ul class="d-flex flex-wrap">
+                <div class="d-flex flex-wrap">
                     <button class="btn mx-2 mt-2 bg-danger rounded-pill text-white border">Restaurant</button>
                     <button class="btn mx-2 mt-2  bg-danger rounded-pill text-white border">Responsive
                         Design</button>
@@ -1154,7 +1219,7 @@
                     <button class="btn mx-2 mt-2 bg-danger rounded-pill text-white border">Cuisine</button>
                     <button class="btn mx-2 mt-2 bg-danger rounded-pill text-white border">Graphic</button>
                     <button class="btn mx-2 mt-2 bg-danger rounded-pill text-white border">Food</button>
-                </ul>
+                    </div>
             </div>
         </div>
         <div class="red_end_footer"></div>
@@ -1163,4 +1228,5 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

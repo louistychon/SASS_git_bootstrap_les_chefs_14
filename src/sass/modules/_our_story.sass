@@ -3,14 +3,22 @@
     width: 100%
     height: fit-content
     background-repeat: repeat
-    label
-        border-bottom: 1px solid lightgrey
-        border-right: 1px solid lightgrey
+    .list-group-item
+        background-color: unset !important
+        border: unset !important
+        border-bottom: 1px solid lightgrey !important
+        border-right: 1px solid lightgrey !important
+        text-align: center
         p
             font-family: courgette
             font-size: 1.5em
+    .list-group-item.active 
+        color: black !important
+        border-right: 4px solid red !important
+        i
+            color: $red-button
     i
-        color: $red-button
+        color: lightgrey
     .menu
         height: 900px
     .card
@@ -30,9 +38,13 @@
         box-shadow: 5px 0 0 0 $red-button !important
 
 @media (max-width: 1000px)
+    .menu
+        height: 1500px !important
+@media (max-width: 768px)
     .container
         max-width: 100% !important
-
-@media (max-width: 768px)
     .colonne_triangles img
         display: none
+    .menu
+        height: 1700px !important
+@media (max-width: 450px)
