@@ -12,13 +12,18 @@ header
         position: fixed !important
         display: flex
         width: 93vw
+        
     ul
-        border-top: 2px solid white
-        border-bottom: 2px solid white
+        border-top: 1px solid lightgrey
+        border-bottom: 1px solid lightgrey
         text-transform: uppercase
         li
-            padding-top: 1%
-            padding-bottom: 1%
+            padding-top: 2%
+            padding-bottom: 2%
+            width: 100%
+            text-align: center
+            a
+                font-size: 0.8em 
         li:hover
             background-color: $red-button
     .text_introduction
@@ -37,24 +42,37 @@ header
 
 //carousel
 .carousel
-    margin-top: 25vh
+    margin-top: 15vh
     height: 60vh
 .carousel-indicators
-    height: 5vh 
-    padding: 5px
+    .outline_indicators
+        border: 2px solid white
+        width: 10px!important
+        height: 10px!important
+        z-index: 2
     button
         width: 10px!important
         height: 10px!important
         border-radius: 50%
+        
     
 
-@media (max-width: 1000px)
+@media (max-width: 1023px)
     header
-        height: 75vh
+        height: 62vh
+        .carousel
+            margin-top: 10vh
+            visibility: hidden
+        .container
+            border: 0 !important
+            display: none !important
+        .col-5:nth-child(2)
+            border-top: 0 !important
+    ul
+        display: block !important
 
 @media (max-width: 768px)
     header
-        height: 15vh
         border-image: none
         .carousel
             display: none

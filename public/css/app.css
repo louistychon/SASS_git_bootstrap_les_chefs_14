@@ -21283,6 +21283,10 @@ h2 .our_title_red_span, .h2 .our_title_red_span {
   .decoration_line {
     display: none !important;
   }
+
+  .container {
+    width: 100% !important;
+  }
 }
 @media (max-width: 450px) {
   .row {
@@ -21306,13 +21310,18 @@ header nav {
   width: 93vw;
 }
 header ul {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   text-transform: uppercase;
 }
 header ul li {
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  text-align: center;
+}
+header ul li a {
+  font-size: 0.8em;
 }
 header ul li:hover {
   background-color: #b12a3b;
@@ -21337,13 +21346,15 @@ header .button_red {
 }
 
 .carousel {
-  margin-top: 25vh;
+  margin-top: 15vh;
   height: 60vh;
 }
 
-.carousel-indicators {
-  height: 5vh;
-  padding: 5px;
+.carousel-indicators .outline_indicators {
+  border: 2px solid white;
+  width: 10px !important;
+  height: 10px !important;
+  z-index: 2;
 }
 .carousel-indicators button {
   width: 10px !important;
@@ -21351,14 +21362,28 @@ header .button_red {
   border-radius: 50%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   header {
-    height: 75vh;
+    height: 62vh;
+  }
+  header .carousel {
+    margin-top: 10vh;
+    visibility: hidden;
+  }
+  header .container {
+    border: 0 !important;
+    display: none !important;
+  }
+  header .col-5:nth-child(2) {
+    border-top: 0 !important;
+  }
+
+  ul {
+    display: block !important;
   }
 }
 @media (max-width: 768px) {
   header {
-    height: 15vh;
     border-image: none;
   }
   header .carousel {
@@ -21474,9 +21499,6 @@ header .button_red {
   width: 100%;
   height: 40px;
 }
-#book_your_table .contact_form ::placeholder {
-  padding-left: 15px;
-}
 #book_your_table .button_red {
   width: 30%;
 }
@@ -21510,6 +21532,15 @@ header .button_red {
 
   .card_body_red {
     width: 99% !important;
+    display: none;
+  }
+}
+@media (max-width: 940px) {
+  .our_blog_cards {
+    flex-direction: column;
+  }
+  .our_blog_cards .background-1, .our_blog_cards .background-2 {
+    background-size: cover;
   }
 }
 @media (max-width: 768px) {
@@ -21522,13 +21553,6 @@ header .button_red {
   }
   .contact_form form {
     width: 100% !important;
-  }
-
-  .our_blog_cards {
-    flex-direction: column;
-  }
-  .our_blog_cards .background-1, .our_blog_cards .background-2 {
-    background-size: cover;
   }
 }
 @media (max-width: 600px) {
@@ -21586,16 +21610,6 @@ header .button_red {
   background-image: url("../images/main_bg.jpg");
 }
 
-@media (max-width: 1000px) {
-  .container {
-    width: 75% !important;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 100% !important;
-  }
-}
 #border-image {
   background: url("../images/footer_bottom_decoration_img.png");
   background-color: black;
@@ -21623,6 +21637,12 @@ footer h4, footer .h4 {
 }
 
 @media (max-width: 1000px) {
+  footer h4, footer .h4, footer p {
+    text-align: center !important;
+  }
+  footer .social {
+    margin: auto;
+  }
   footer .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -21650,8 +21670,12 @@ footer h4, footer .h4 {
   }
 }
 @media (max-width: 500px) {
+  footer .col-4 {
+    padding: 20px !important;
+  }
   footer .gallery {
     grid-template-columns: repeat(2, 1fr);
+    padding-right: 2vh;
   }
   footer .gallery img {
     width: 75%;

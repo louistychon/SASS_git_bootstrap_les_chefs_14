@@ -16,6 +16,10 @@ footer
 
 @media (max-width: 1000px)
     footer
+        h4,p
+            text-align: center !important
+        .social
+            margin: auto
         .gallery
             grid-template-columns: repeat(2, 1fr)
         ul
@@ -39,8 +43,11 @@ footer
             width: 100% !important
 @media (max-width: 500px)
     footer
+        .col-4
+            padding: 20px !important
         .gallery
             grid-template-columns: repeat(2, 1fr)
+            padding-right: 2vh
             img
                 width: 75%
             
