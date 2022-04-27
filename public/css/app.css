@@ -21673,6 +21673,9 @@ footer .popular_buttons {
   footer .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  footer .gallery img {
+    margin: auto;
+  }
   footer ul {
     padding-inline-start: 0 !important;
     margin-block-start: 0 !important;
